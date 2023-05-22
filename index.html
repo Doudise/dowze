@@ -1,0 +1,538 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="contextmenu.js"></script>
+    <meta charset="utf-8" />
+    <title>朵梓网%三%</title>
+    <link href="functions.css" rel="stylesheet" />
+    <style>
+        body {background-image: url(bg.jpg);background-repeat: repeat;}
+        a.z {color: white;top: 10px;bottom: 10px;font-size: 20px;}
+        .header {width: 100%;border: solid #666666 0.7px;}
+        ._1:hover {text-decoration: underline blink;cursor: pointer;}
+        .hidden {display: none;}
+        ul.custom-context-menu{list-style:none;padding:0;margin:0;}
+        li.custom-context-menu-list{color:black;transition:0.5s;background-color:white;}
+        li.custom-context-menu-list:hover{transition:0.5s;color:white;background-color: blue;}
+        ul.custom-context-menu{border-radius:5px;}
+    </style>
+    <script src="favicon.js"></script>
+    <meta name="author" content="朵梓网%三% 开发人员" id="meta_author" />
+    <meta name="description" content="说明：朵梓网%三%是我们朵梓网第三代网站，内部设有重置网站的作用。这一次要感谢 https://www.bilibili.com/ 的赞助，不然我觉得我们还在朵梓网二世呢。" id="meta_description" />
+    <meta name="keywords" content="朵梓网, 朵梓, Dowze, dowze, 朵梓网三, 朵梓网三世, Dowze3, 3, dowze3, Dowze 3, dowze 3, 三, ③, Ⅲ, 朵梓三, 朵梓三世, 三世, do, d③, Do, D③, DO, dO, do3, Do3, dO3, DO3, do 3, Do 3, dO 3, DO 3" id="meta_keywords" />
+</head>
+<body>
+    <style>
+        #logon_1 {
+            text-align: center;
+        }
+    </style>
+    <div class="header" id="header" style="background-color:#000000;position:fixed;"><div id="_span_div_" style="color: white;">您好，<span id="_span_name_"></span>。想要使用下面的功能吗？点击下方的链接吧！</div></div>
+    <script src="$.js"></script><br id="_signal_span_" />
+    <script src="loading.js"></script><br /><br /><div id="frameset">
+    </div>
+    <Script src="w.js"></Script>
+    <h1 style="color: green; font-size: 40px; text-decoration:blink;text-align:center;" id="title">欢迎来到朵梓网！</h1>
+    <script>
+        if((new Date().getMonth()+1)==8||(new Date().getMonth+1)==7){document.getElementById("朵梓网 - 欢乐暑假！")}
+        if((new Date().getMonth()+1)==1||(new Date().getMonth+1)==2){document.getElementById("朵梓网 - 快乐过年！")}
+        if((new Date().getMonth()+1)==9){document.getElementById("朵梓网 - 开学季！")}
+        if(new Date().getDate==24&&(new Date().getMonth+1)==5){document.getElementById("朵梓网 - 今天是开发人员 王焌圯 的生日！")}
+        if(new Date().getDate==1&&(new Date().getMonth+1)==6){document.getElementById("朵梓网 - 祝大家儿童节快乐！")}
+        if(new Date().getDate==1&&(new Date().getMonth+1)==1){document.getElementById("朵梓网 - 祝大家元旦快乐！")}
+        if(new Date().getDate==1&&(new Date().getMonth+1)==5){document.getElementById("朵梓网 - 劳动最光荣！")}
+        if(new Date().getDate==1&&(new Date().getMonth+1)==4){document.getElementById("朵梓网 - 愚人节快乐！")}
+        if(new Date().getDate==12&&(new Date().getMonth+1)==3){document.getElementById("朵梓网 - 植树节，让我们一起劳动吧~")}
+        if(new Date().getDate==25&&(new Date().getMonth+1)==12){document.getElementById("朵梓网 - Merry Christmas!")}
+        if(new Date().getDate==1&&(new Date().getMonth+1)==10){document.getElementById("朵梓网 - 国庆快乐！")}
+        if(new Date().getDate==1&&(new Date().getMonth+1)==8){document.getElementById("朵梓网 - 建军节快乐！")}
+        if(new Date().getDate==1&&(new Date().getMonth+1)==7){document.getElementById("朵梓网 - 建党节快乐！")}
+        if(new Date().getDate==1&&(new Date().getMonth+1)==9){document.getElementById("朵梓网 - 开学啦！")}
+    </script>
+    <div id="logon_1">请输入真实姓名以登录：<input type="text" id="textname" placeholder="输入真实姓名。" /><button onclick="add_cookie('username', document.getElementById('textname').value); alert('提交成功，即将刷新'); location.reload();" id="submitnames">提交名称</button></div>
+    当前时间：<span id="time"></span>
+    <script>setInterval(function(){document.getElementById('time').innerText=`${new Date().getFullYear()} 年 ${new Date().getMonth()+1} 月 ${new Date().getDate()} 日 星期 ${new Date().getDay()} ${new Date().getHours()}:${new Date().getMinutes()}:${new Date().getSeconds()}.${new Date().getMilliseconds()}`;}, 1);</script>
+    <script>if (checkCookie('username')) { document.getElementById('logon_1').style.display = 'none'; document.getElementById('_span_name_').innerText = getCookie('username'); document.getElementById('_signal_span_').style.display = "block"; } else { document.getElementById('_span_div_').style.display = 'none'; document.getElementById('_signal_span_').style.display = 'none'; }</script>
+    <marquee style="background-image:url(bg.jpg);background-repeat:repeat;border:1px solid #666666;" direction="up" height="200" scrollamount="3" width="100%" behavior="scroll">
+        <h1 style="font-size: 28px;">更新内容</h1>
+        <style>
+            tr, th, td, table {
+                border: 1px solid #161616
+            }
+        </style><table>
+    <tr><th>版本<br />Version</th><th>更新内容<br />Update Content</th></tr>
+    <tr><td>Alpha 1.2</td><td>更新了这个表格和 meta 关键词。你可以在上方输入框中输入：<span id="_10" onclick="CopyURL('_10');" class="_1">outputraw({elementID:"output",clear:true,texts:[{content:`网站搜索词：\n${document.getElementById('meta_keywords').content}\n\n网站描述：\n${document.getElementById('meta_description').content}\n\n网站作者：\n${document.getElementById('meta_author').content}\n\nAll clear.`,colors:{r:0,g:0,b:0,a:255}}]});</span> 验证。</td></tr>
+    <tr><td>Alpha 1.2.10</td><td>更新了版本输出。</td></tr>
+    <tr><td>Alpha 1.2.11</td><td>增加了实验中心——<a href="class.html">class.html</a>。</td></tr>
+    <tr><td>Alpha 1.2.12</td><td>增加了 <span class="_1" id="_11" onclick="CopyURL('_11');">geticonraw</span> 指令。</td></tr>
+    <tr><td>Beta 1.0</td><td>增加了<span class="_1" id="_12" onclick="CopyURL('_12');">colorchooserraw</span> 指令。</td></tr>
+    <tr><td>Beta 1.0.1</td><td>更新了关键词。</td></tr>
+    <tr><td>Beta 1.1</td><td>新春更新。</td></tr>
+    <tr><td>Beta 1.2</td><td>除夕前的更新，将指令完善。</td></tr>
+    <tr><td>Beta 1.3</td><td>新年后的大更新，将地区更新到了"鄂"。可以输入 <span id="_13" onclick="CopyURL('_13');" class="_1">placefinderraw()</span> 查看。</td></tr>
+    <tr><td>1.0</td><td>正式版朵梓网%三%出现！指令 <span onclick="CopyURL('_13');" class="_1">placefinderraw()</span> 完善。</td></tr>
+    <tr><td>1.1</td><td>新增管理员。新增 class。</td></tr>
+    <tr><td>1.2</td><td>新增 admin.html。</td></tr>
+    <tr><td>1.3</td><td>增加了入口。</td></tr>
+    <tr><td>1.4</td><td>增加了图书——<a href="javascript:alert('此链接已失效')">books.html</a>，新增了《将进酒》、《逍遥游》、《楚辞·离骚》三遍文章。</td></tr>
+    <tr><td>1.5</td><td>新增了 showdialograw 指令。</td></tr>
+    <tr><td>1.6</td><td>新增了 雾雨魔理沙专栏——<a href="javascript:alert('此链接已失效')">marisa.html</a>。</td></tr>
+    <tr><td>1.7</td><td>更新了管理员界面。</td></tr>
+    <tr><td>1.8</td><td>更新了“季姬击鸡记”。</td></tr>
+    <tr><td>1.9</td><td>更新了管理员界面，新增 base64 转换器。</td></tr>
+    <tr><td>1.10</td><td>一次特大更新，将朵梓网大部分内容更新。</td></tr>
+    <tr><td>1.11</td><td>朵梓论坛出现分级现象，朵梓网快捷键更新，废除 checkkeyraw 和 getversionraw 两个指令。</td></tr>
+    <tr><td>1.11.1</td><td>游戏中心秒变功能中心，新增废弃已久的阿里谷（AliCrops），快捷键样式更新。</td></tr>
+    <tr><td>1.11.2</td><td>阿里谷更新出现入门级，专为新手提供服务~</td></tr>
+    </table></marquee>
+    当前版本：<span id="version2"></span><hr /><div style="width:100%;height:300px;overflow-y: scroll;overflow-x: hidden;" class="header">
+    游戏：进度条 Progressbar.<br />
+            <div id="progressShell">
+                <div id="progressBar" style="width:0%;background-color:black; max-width:100%;" onmouseover="if(eval(this.style.width.split('%'))>=100){this.style.width='100%';}"></div>
+            </div>
+            <button class="progressBarBtn" onclick="progressBar防止数据溢出();document.getElementById('progressBar').style.width=(eval(document.getElementById('progressBar').style.width.split('%')[0])+1).toString()+'%';">加一</button><br />
+            <button class="progressBarBtn" onclick="progressBar防止数据溢出();document.getElementById('progressBar').style.width=(eval(document.getElementById('progressBar').style.width.split('%')[0])+2).toString()+'%';">加二</button><br />
+            <button class="progressBarBtn" onclick="progressBar防止数据溢出();document.getElementById('progressBar').style.width=(eval(document.getElementById('progressBar').style.width.split('%')[0])+4).toString()+'%';">加四</button><br />
+            <button class="progressBarBtn" onclick="progressBar防止数据溢出();document.getElementById('progressBar').style.width=(eval(document.getElementById('progressBar').style.width.split('%')[0])+5).toString()+'%';">加五</button><br />
+            <button class="progressBarBtn" onclick="progressBar防止数据溢出();document.getElementById('progressBar').style.width=(eval(document.getElementById('progressBar').style.width.split('%')[0])+10).toString()+'%';">加十</button><br />
+            <button class="progressBarBtn" onclick="progressBar防止数据溢出();document.getElementById('progressBar').style.width=(eval(document.getElementById('progressBar').style.width.split('%')[0])+20).toString()+'%';">加二十</button><br />
+            <button class="progressBarBtn" onclick="progressBar防止数据溢出();document.getElementById('progressBar').style.width=(eval(document.getElementById('progressBar').style.width.split('%')[0])+25).toString()+'%';">加二十五</button><br />
+            <button class="progressBarBtn" onclick="progressBar防止数据溢出();document.getElementById('progressBar').style.width=(eval(document.getElementById('progressBar').style.width.split('%')[0])+50).toString()+'%';">加五十</button><br />
+            <button class="progressBarBtn" onclick="progressBar防止数据溢出();document.getElementById('progressBar').style.width=(eval(document.getElementById('progressBar').style.width.split('%')[0])+100).toString()+'%';">加满</button><br />
+            <button class="progressBarBtn" onclick="progressBar防止数据溢出();document.getElementById('progressBar').style.width=(eval(document.getElementById('progressBar').style.width.split('%')[0])-1).toString()+'%';">减一</button><br />
+            <button class="progressBarBtn" onclick="progressBar防止数据溢出();document.getElementById('progressBar').style.width=(eval(document.getElementById('progressBar').style.width.split('%')[0])-2).toString()+'%';">减二</button><br />
+            <button class="progressBarBtn" onclick="progressBar防止数据溢出();document.getElementById('progressBar').style.width=(eval(document.getElementById('progressBar').style.width.split('%')[0])-4).toString()+'%';">减四</button><br />
+            <button class="progressBarBtn" onclick="progressBar防止数据溢出();document.getElementById('progressBar').style.width=(eval(document.getElementById('progressBar').style.width.split('%')[0])-5).toString()+'%';">减五</button><br />
+            <button class="progressBarBtn" onclick="progressBar防止数据溢出();document.getElementById('progressBar').style.width=(eval(document.getElementById('progressBar').style.width.split('%')[0])-10).toString()+'%';">减十</button><br />
+            <button class="progressBarBtn" onclick="progressBar防止数据溢出();document.getElementById('progressBar').style.width=(eval(document.getElementById('progressBar').style.width.split('%')[0])-20).toString()+'%';">减二十</button><br />
+            <button class="progressBarBtn" onclick="progressBar防止数据溢出();document.getElementById('progressBar').style.width=(eval(document.getElementById('progressBar').style.width.split('%')[0])-25).toString()+'%';">减二十五</button><br />
+            <button class="progressBarBtn" onclick="progressBar防止数据溢出();document.getElementById('progressBar').style.width=(eval(document.getElementById('progressBar').style.width.split('%')[0])-50).toString()+'%';">减五十</button><br />
+            <button class="progressBarBtn" onclick="document.getElementById('progressBar').style.width='0%';">清空</button><br />
+            <div id="progressColor"></div>
+            <script>(function(){var input1 = document.createElement('input'); input1.type = "number"; input1.id="progressColorR"; var input2 = document.createElement('input'); input2.type = "number"; input2.id="progressColorG"; var input3 = document.createElement('input'); input3.type = 'number'; input3.id="progressColorB"; input1.placeholder = "红色"; input2.placeholder = "绿色"; input3.placeholder = "蓝色"; input1.value='0'; input2.value='0'; input3.value='0'; input1.classList.add("colorInput"); input2.classList.add("colorInput"); input3.classList.add("colorInput"); var div = document.createElement('div'); div.style.width = '90%'; div.style.height = '100px'; div.style.border = '1px solid #000000'; div.id='progressColorArea'; document.getElementById('progressColor').append(input1, input2, input3, document.createElement('br'), div); function $() { if (input1.value.length <= 3 && input2.value.length <= 3 && input3.value.length <= 3) { div.style.backgroundColor = `rgba(${input1.value},${input2.value},${input3.value},255)`; } else { alert("参数错误，无法合成颜色！"); } } function __() { input1.value = Math.floor(Math.random() * 255); input2.value = Math.floor(Math.random() * 255); input3.value = Math.floor(Math.random() * 255); $(); } var button = document.createElement('button'); var btn = document.createElement('button'); var b = document.createElement('button'); button.innerText = '合成'; button.id='progressColorSummon'; b.innerText = '随机'; button.addEventListener('click', $); b.addEventListener('click', __); document.getElementById('progressColor').append(button, document.createElement('br'), b, document.createElement('br')); button.click();})()</script>
+            <button class="progressBarBtn" onclick="document.getElementById('progressBar').style.backgroundColor=document.getElementById('progressColorArea').style.backgroundColor;">更改颜色</button><br />
+            <button class="progressBarBtn" onclick="document.getElementById('progressBar').style.backgroundColor='black'; document.getElementById('progressColorB').value='0'; document.getElementById('progressColorG').value='0'; document.getElementById('progressColorR').value='0'; document.getElementById('progressColorSummon').click();">还原颜色</button><br />
+            <button class="progressBarBtn" onclick="progressBarSave();">保存数据</button>
+            <script>
+                if (checkCookie("progressBar")) {
+                    var data=JSON.parse(getCookie("progressBar"));
+                    document.getElementById('progressBar').style.backgroundColor=data.color;
+                    document.getElementById('progressBar').style.width=data.width;
+                    document.getElementById('progressColorR').value=data.r;
+                    document.getElementById('progressColorG').value=data.g;
+                    document.getElementById('progressColorB').value=data.b;
+                    document.getElementById('progressColorSummon').click();
+                }
+                function progressBar防止数据溢出(){
+                    if(eval(document.getElementById('progressBar').style.width.split("%")[0])>100){
+                        document.getElementById('progressBar').style.width="100%";
+                    }
+                }
+            </script>
+    <script>
+        function progressBarSave() {
+            var color=document.getElementById('progressBar').style.backgroundColor;
+            var r=document.getElementById('progressColorR').value;
+            var g=document.getElementById('progressColorG').value;
+            var b=document.getElementById('progressColorB').value;
+            var data=document.getElementById('progressBar').style.width;
+            add_cookie("progressBar", '{"color":"'+color+'","width":"'+data+'", "r":"'+r+'", "g":"'+g+'", "b":"'+b+'"}');
+            alert("保存成功！");
+        }
+    </script>
+    <style>
+        #progressShell {
+            border: 2px solid black;
+            border-radius:10px;
+            width:100%;
+            height:10px;
+            transition:border 1s;
+        }
+        #progressBar{
+            height:10px;
+            border-radius:10px;
+        }
+        #progressShell:hover {
+            transition:border 1s;
+            border:white solid 2px;
+        }
+        button.progressBarBtn{transition:1s;background-color:white;color:black;}
+        button.progressBarBtn:hover{transition:1s;color:white;background-color: black;}
+        input.colorInput{transition:1s;background-color:white;color:black}
+        input.colorInput:hover{transition:1s;color:white;background-color: black;}
+    </style>
+    </div>
+    <div class="header" style="background-color:purple;color:white;word-break:break-all;word-wrap:break-word;" id="AliCrops">
+        <h1 style="text-align:center;font-size:32px;">阿里谷 (AliCrops) 专栏</h1>
+        说到阿里谷，这个栏目只在 喵妹妹留言板 &times; 朵梓网 中出现过一次，随后就不了了之了。所以在朵梓网%三%中重现阿里谷，完善代码平台，创建和谐的代码环境。<br /><br />
+        <b id="alicrops1">第一篇 认识篇</b>&nbsp;&nbsp;<a href="#alicrops2">前往第二篇</a>
+        <style>
+            .codeBackgroundBlack{background-color:black;color:white;width:100%;}
+            .codeBackgroundWhite{background-color:white;color:black;width:100%;}
+            .codeHTMLElement,.codeCSSElement,.codeJSFunction,.codeXMLElement{color:yellow;}
+            .codeHTMLCharacter,.codeHTMLAttribute,.codeCSSResult,.codeCSSAt,.codeJSKeyword,.codeXMLAttribute{color:cadetblue;}
+            .codeHTMLDoctype,.codeXMLVersion{color:darkgray;}
+            .codeHTMLResult,.codeJSString,.codeXMLResult{color:lightcoral;}
+            .codeCSSAttribute, codeJSVar{color:coral;}
+            .codeCSSClass, .codeCSSID, .codeJSClass{color:turquoise;}
+            .codeCSSEvent,.codeJSNumber{color:lightgreen;}
+            .codeNote{color:greenyellow;}
+            .codeJSAttribute{color:lightblue;}
+            .codeJSAwaiting,.codeXMLNamespace{color:darkkhaki;}
+            .codeCSSFunction{color:lime;}
+            .codeCSSVar{color:orchid;}
+        </style>
+        <ol>
+            <li>
+                规定文档格式：<br />
+                <ul>
+                    <li>
+                        HTML：
+                        <div class="codeBackgroundBlack">
+                            <span class="codeHTMLDoctype">&lt;!DOCTYPE <span class="codeHTMLAttribute">html</span> <span class="codeHTMLAttribute">PUBLIC</span> <span class="codeHTMLResult">"-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"</span>&gt;</span>
+                        </div>
+                        其中：<br />
+                        <ul>
+                            <li>
+                                <span class="codeHTMLAttribute codeBackgroundBlack">html</span><br />指定文档格式为 HTML。必选。
+                            </li>
+                            <li>
+                                <span class="codeBackgroundBlack"><span class="codeHTMLAttribute">PUBLIC</span> <span class="codeHTMLResult">"-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"</span></span><br />引用 HTML DTD（这个我也不太清楚，但是你只要复制上去就可以了）。可选。
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        XML：
+                        <div class="codeBackgroundBlack">
+                        <span class="codeXMLVersion">&lt;?xml <span class="codeXMLAttribute">version</span>=<span class="codeXMLResult">"1.0"</span> <span class="codeXMLAttribute">encoding</span>=<span class="codeXMLResult">"utf-8"</span> <span class="codeXMLAttribute">standalone</span>=<span class="codeXMLResult">"yes"</span> ?&gt;</span>
+                        </div>
+                        其中：<br />
+                        <ul>
+                            <li>
+                                <span class="codeBackgroundBlack"><span class="codeXMLAttribute">version</span>=<span class="codeXMLResult">"1.0"</span></span><br />
+                                指定 XML 版本 1.0。必选，值只能是 "1.0"。
+                            </li>
+                            <li>
+                                <span class="codeBackgroundBlack"><span class="codeXMLAttribute">encoding</span>=<span class="codeXMLResult">"utf-8"</span></span><br />
+                                指定 XML 编码。可选。
+                            </li>
+                            <li>
+                                <span class="codeBackgroundBlack"><span class="codeXMLAttribute">standalone</span>=<span class="codeXMLResult">"yes"</span></span><br />
+                                我也不知道这是什么。可选，值只能是 "yes" 或 "no"。
+                            </li>
+                        </ul>
+                    </li>
+                </ul>必须是 HTML 文档的第一行，位于 <span class="codeBackgroundBlack">&lt;<span class="codeHTMLElement">html</span>&gt;</span> 标签之前。
+            </li>
+            <li>
+                HTML5 框架：<br />
+                <div class="codeBackgroundBlack">
+                    &lt;<span class="codeHTMLElement">html</span>&gt;<br />
+                    &lt;<span class="codeHTMLElement">head</span>&gt;<br />
+                    &lt;<span class="codeHTMLElement">meta</span> <span class="codeHTMLAttribute">charset</span>=<span class="codeHTMLResult">"utf-8"</span> /&gt;<br />
+                    &lt;<span class="codeHTMLElement">title</span>&gt;Title&lt;/<span class="codeHTMLElement">title</span>&gt;<br />
+                    &lt;/<span class="codeHTMLElement">head</span>&gt;<br />
+                    &lt;<span class="codeHTMLElement">body</span>&gt;<br />
+                    文本内容...<br />
+                    &lt;/<span class="codeHTMLElement">body</span>&gt;<br />
+                    &lt;/<span class="codeHTMLElement">html</span>&gt;<br />
+                </div>
+                其中：
+                <ul>
+                    <li>
+                        <span class="codeBackgroundBlack codeHTMLElement">title</span><br />
+                        文档标题，内容可以改变。
+                    </li>
+                    <li>
+                        <span class="codeBackgroundBlack codeHTMLElement">body</span><br />
+                        文章内容。
+                    </li>
+                </ul>
+            </li>
+            <li>
+                规定文本颜色：<br />
+                <div class="codeBackgroundBlack">
+                    &lt;<span class="codeHTMLElement">style</span>&gt;<br />
+                    <span class="codeCSSElement">i</span><span class="codeCSSID">#i</span> {<br />
+                    <span class="codeCSSAttribute">color</span>: <span class="codeCSSResult">blue</span>;<br />
+                    }<br />
+                    &lt;/<span class="codeHTMLElement">style</span>&gt;<br />
+                    &lt;<span class="codeHTMLElement">i</span> <span class="codeHTMLAttribute">id</span>=<span class="codeHTMLResult">"i"</span>&gt;这是个蓝色的字。&lt;/<span class="codeHTMLElement">i</span>&gt;
+                </div>
+                效果：<br />
+                <div class="codeBackgroundWhite">
+                    <style>
+                        i#i {
+                            color: blue;
+                        }
+                    </style>
+                    <i id="i">这是个蓝色的字。</i>
+                </div>
+            </li>
+            <li>
+                用按钮改文本内容：<br />
+                <div class="codeBackgroundBlack">
+                    &lt;<span class="codeHTMLElement">script</span>&gt;<br />
+                    <span class="codeJSKeyword">function</span> <span class="codeJSFunction">myFunc1</span>() {<br>
+                    <span class="codeJSClass">document</span>.<span class="codeJSFunction">getElementById</span>(<span class="codeJSString">"id1"</span>).<span class="codeJSAttribute">innerHTML</span>=<span class="codeJSString">"示例文本"</span>;<br>
+                    }<br>
+                    <span class="codeJSKeyword">function</span> <span class="codeJSFunction">myFunc2</span>() {<br>
+                    <span class="codeJSClass">document</span>.<span class="codeJSFunction">getElementById</span>(<span class="codeJSString">"id1"</span>).<span class="codeJSAttribute">innerHTML</span>=<span class="codeJSString">"样式文本"</span>;<br>
+                    }<br>
+                    &lt;/<span class="codeHTMLElement">script</span>&gt;<br />
+                    &lt;<span class="codeHTMLElement">span</span> <span class="codeHTMLAttribute">id</span>=<span class="codeHTMLResult">"id1"</span>&gt;样式文本&lt;/<span class="codeHTMLElement">span</span>&gt;&lt;<span class="codeHTMLElement">br</span> /&gt;<br>
+                    &lt;<span class="codeHTMLElement">button</span> <span class="codeHTMLAttribute">onclick</span>=<span class="codeHTMLResult">"<span class="codeJSFunction">myFunc1</span>();"</span>&gt;改变文本&lt;/<span class="codeHTMLElement">button</span>&gt;<br>
+                    &lt;<span class="codeHTMLElement">button</span> <span class="codeHTMLAttribute">onclick</span>=<span class="codeHTMLResult">"<span class="codeJSFunction">myFunc2</span>();"</span>&gt;还原文本&lt;/<span class="codeHTMLElement">button</span>&gt;<br>
+                </div>
+                效果：<br />
+                <div class="codeBackgroundWhite">
+                    <script>
+                        function myFunc1() {
+                            document.getElementById("id1").innerHTML="示例文本";
+                        }
+                        function myFunc2() {
+                            document.getElementById("id1").innerHTML="样式文本";
+                        }
+                    </script>
+                    <span id="id1">样式文本</span><br />
+                    <button onclick="myFunc1();">改变文本</button>
+                    <button onclick="myFunc2();">还原文本</button>
+                </div>
+            </li>
+            <li>
+                网页提示：<br />
+                <div class="codeBackgroundBlack">
+                    &lt;<span class="codeHTMLElement">script</span>&gt;<br />
+                    <span class="codeJSKeyword">function</span> <span class="codeJSFunction">myFunc3</span>() {<br>
+                    <span class="codeJSFunction">alert</span>(<span class="codeJSString">"Alertion"</span>);<br>
+                    }<br>
+                    &lt;/<span class="codeHTMLElement">script</span>&gt;<br />
+                    &lt;<span class="codeHTMLElement">button</span> <span class="codeHTMLAttribute">onclick</span>=<span class="codeHTMLResult">"<span class="codeJSFunction">myFunc3</span>();"</span>&gt;提示&lt;/<span class="codeHTMLElement">button</span>&gt;<br>
+                </div>
+                效果：
+                <div class="codeBackgroundWhite">
+                    <script>
+                        function myFunc3() {
+                            alert("Alertion");
+                        }
+                    </script>
+                    <button onclick="myFunc3();">提示</button>
+                </div>
+            </li>
+            <li>
+                网页悬停提示：<br />
+                使用<span class="codeBackgroundBlack">&lt;<span class="codeHTMLElement">abbr</span>&gt;</span>指令。<br />
+                <div class="codeBackgroundBlack">
+                    &lt;<span class="codeHTMLElement">abbr</span> <span class="codeHTMLAttribute">title</span>=<span class="codeHTMLResult">"An abbreviation tip"</span>&gt;悬停有惊喜&lt;/<span class="codeHTMLElement">abbr</span>&gt;
+                </div>
+                效果：
+                <div class="codeBackgroundWhite">
+                    <abbr title="An abbreviation tip">悬停有惊喜</abbr>
+                </div>
+            </li>
+            <li>
+                使用表格：<br>
+                <div class="codeBackgroundBlack">
+                    &lt;<span class="codeHTMLElement">table</span>&gt;<br />
+                    &lt;<span class="codeHTMLElement">caption</span>&gt;示例表格&lt;/<span class="codeHTMLElement">caption</span>&gt;<br />
+                    &lt;<span class="codeHTMLElement">tr</span>&gt;<br />
+                    &lt;<span class="codeHTMLElement">th</span>&gt;标题 1&lt;/<span class="codeHTMLElement">th</span>&gt;<br />
+                    &lt;<span class="codeHTMLElement">th</span>&gt;标题 2&lt;/<span class="codeHTMLElement">th</span>&gt;<br />
+                    &lt;/<span class="codeHTMLElement">tr</span>&gt;<br />
+                    &lt;<span class="codeHTMLElement">tr</span>&gt;<br />
+                    &lt;<span class="codeHTMLElement">td</span>&gt;文本 1&lt;/<span class="codeHTMLElement">td</span>&gt;<br />
+                    &lt;<span class="codeHTMLElement">td</span>&gt;文本 2&lt;/<span class="codeHTMLElement">td</span>&gt;<br />                    
+                    &lt;/<span class="codeHTMLElement">tr</span>&gt;<br />
+                    &lt;/<span class="codeHTMLElement">table</span>&gt;<br />
+                    &lt;<span class="codeHTMLElement">style</span>&gt;<br />
+                    <span class="codeCSSElement">table</span>, <span class="codeCSSElement">th</span>, <span class="codeCSSElement">td</span>, <span class="codeCSSElement">caption</span> {<br>
+                    <span class="codeCSSAttribute">border</span>: <span class="codeCSSResult">1px solid black</span>;<br>
+                    }<br>
+                    &lt;/<span class="codeHTMLElement">style</span>&gt;<br />
+                </div>
+                效果：<br>
+                <div class="codeBackgroundWhite">
+                    <table>
+                    <caption>示例表格</caption>
+                    <tr>
+                    <th>标题 1</th>
+                    <th>标题 2</th>
+                    </tr>
+                    <tr>
+                    <td>文本 1</td>
+                    <td>文本 2</td>
+                    </tr>
+                    </table>
+                    <style>caption{border:1px solid black;}</style>
+                </div>
+            </li>
+            <li>
+                光标不同？<br>
+                <div class="codeBackgroundBlack">
+                    &lt;<span class="codeHTMLElement">style</span>&gt;<br />
+                    <span class="codeCSSClass">.cursorPointer</span> {<br>
+                    <span class="codeCSSAttribute">cursor</span>: <span class="codeCSSResult">pointer</span>;<br>
+                    }<br>
+                    &lt;/<span class="codeHTMLElement">style</span>&gt;<br />
+                    &lt;<span class="codeHTMLElement">u</span> <span class="codeHTMLAttribute">class</span>=<span class="codeHTMLResult">"cursorPointer"</span>&gt;光标不同&lt;/<span class="codeHTMLElement">u</span>&gt;
+                </div>
+                <span class="codeBackgroundBlack"><span class="codeCSSAttribute">cursor</span></span> 属性指的是光标。<br/>
+                效果：
+                <div class="codeBackgroundWhite">
+                    <style>
+                    .cursorPointer {
+                    cursor: pointer;
+                    }
+                    </style>
+                    <u class="cursorPointer">光标不同</u>
+                </div>
+            </li>
+            <li>
+                粗体字放在最中间。
+                <div class="codeBackgroundBlack">
+                    &lt;<span class="codeHTMLElement">b</span> <span class="codeHTMLAttribute">style</span>=<span class="codeHTMLResult">"<span class="codeCSSAttribute">text-align</span>: <span class="codeCSSResult">center</span>;"</span>&gt;在中间的粗体字&lt;/<span class="codeHTMLElement">b</span>&gt;
+                </div>
+                其中，<span class="codeBackgroundBlack"><span class="codeCSSAttribute">text-align</span></span> 指字体位置，<span class="codeBackgroundBlack"><span class="codeCSSResult">left 或 start</span></span> 指左侧，<span class="codeBackgroundBlack"><span class="codeCSSResult">center</span></span> 指中间，<span class="codeBackgroundBlack"><span class="codeCSSResult">right 或 end</span></span> 指右侧。<br />
+                效果：
+                <div class="codeBackgroundWhite">
+                    <div style="text-align: center;"><b>在中间的粗体字</b></div>
+                </div>
+            </li>
+        </ol>
+        <b id="alicrops2">第二篇 样式篇</b>&nbsp;&nbsp;<a href="#alicrops1">返回第一篇</a><br />
+        从这一阶段开始，每一个示例都会分为三个部分：CSS、HTML 和 JS 部分。
+        <ol>
+            <li>
+                圆角矩形：
+                <div class="codeBackgroundBlack">
+                    CSS 部分：<br>
+                    <span class="codeCSSElement">div</span><span class="codeCSSClass">.radioRect</span> {<br>
+                    <span class="codeCSSAttribute">border</span>: <span class="codeCSSResult">2px solid black</span>;<br>
+                    <span class="codeCSSAttribute">border-radius</span>: <span class="codeCSSResult">10px</span>;<br>
+                    <span class="codeCSSAttribute">height</span>: <span class="codeCSSResult">50px</span>;<br>
+                    <span class="codeCSSAttribute">width</span>: <span class="codeCSSResult">100%</span>;<br>
+                    }<br>
+                    HTML 部分：<br>
+                    &lt;<span class="codeHTMLElement">div</span> <span class="codeHTMLAttribute">class</span>=<span class="codeHTMLResult">"radioRect"</span>&gt;这是一个圆角矩形&lt;/<span class="codeHTMLElement">div</span>&gt;
+                </div>
+                效果：
+                <div class="codeBackgroundWhite">
+                    <style>
+                        div.radioRect {
+                            border: 2px solid black;
+                            border-radius: 10px;
+                            height: 50px;
+                            width: 100%;
+                        }
+                    </style>
+                    <div class="radioRect">这是一个圆角矩形</div>
+                </div>
+                <span class="codeBackgroundBlack"><span class="codeCSSAttribute">border-radius</span></span> 意为边框圆角长度，通常用 5px、10px 或者 0.5cm 规定圆角长度。（如果你想要做一个圆形，请看示例 2）
+            </li>
+            <li>
+                做一个圆形。
+                <div class="codeBackgroundBlack">
+                    CSS 部分：<br>
+                    <span class="codeCSSElement">div</span><span class="codeCSSClass">.rectcycle</span> {<br>
+                    <span class="codeCSSAttribute">border</span>: <span class="codeCSSResult">2px solid black</span>;<br>
+                    <span class="codeCSSAttribute">border-radius</span>: <span class="codeCSSResult">50px</span>;<br>
+                    <span class="codeCSSAttribute">height</span>: <span class="codeCSSResult">100px</span>;<br>
+                    <span class="codeCSSAttribute">width</span>: <span class="codeCSSResult">100px</span>;<br>
+                    }<br>
+                    HTML 部分：<br>
+                    &lt;<span class="codeHTMLElement">div</span> <span class="codeHTMLAttribute">class</span>=<span class="codeHTMLResult">"rectcycle"</span>&gt;&lt;/<span class="codeHTMLElement">div</span>&gt;
+                </div>
+                效果：
+                <div class="codeBackgroundWhite">
+                    <style>
+                        div.rectcycle {
+                        border: 2px solid black;
+                        border-radius: 50px;
+                        height: 100px;
+                        width: 100px;
+                        }
+                    </style>
+                    <div class="rectcycle"></div>
+                </div>
+                只是这圆里面不能写字，要是能写字就好了。<br>
+                原理：CSS 属性 <span class="codeBackgroundBlack"><span class="codeCSSAttribute">width</span></span> 和 <span class="codeBackgroundBlack"><span class="codeCSSAttribute">height</span></span> 都是 <span class="codeBackgroundBlack"><span class="codeCSSAttribute">border-radius</span></span> 值的两倍，这样四条边长度（指直线，不是碰撞面积）都为 0，就是一个圆形了。
+            </li>
+            <li>
+                渐变色（从左到右）
+                <div class="codeBackgroundBlack">
+                    CSS 部分：<br>
+                    <span class="codeCSSID">#a1</span> {<br>
+                    <span class="codeCSSAttribute">width</span>:<span class="codeCSSResult">100%</span>;<br>
+                    <span class="codeCSSAttribute">height</span>:<span class="codeCSSResult">50px</span>;<br>
+                    <span class="codeCSSAttribute">background</span>:<span class="codeCSSFunction">linear-gradient</span>(<span class="codeCSSVar">to</span> <span class="codeCSSResult">right</span>, <span class="codeCSSResult">cyan</span>, <span class="codeCSSResult">black</span>, <span class="codeCSSResult">yellow</span>);<br>
+                    <span class="codeCSSAttribute">color</span>:<span class="codeCSSResult">white</span>;<br>
+                    <span class="codeCSSAttribute">border-radius</span>: <span class="codeCSSResult">10px</span>;<br>
+                    <span class="codeCSSAttribute">text-align</span>: <span class="codeCSSResult">center</span>;<br>
+                    }<br>
+                    HTML 部分：<br>
+                    &lt;<span class="codeHTMLElement">div</span> <span class="codeHTMLAttribute">id</span>=<span class="codeHTMLResult">"a1"</span>&gt;渐变色&lt;/<span class="codeHTMLElement">div</span>&gt;
+                </div>
+                效果（由于渐变，首位都会空行）：<br>
+                <div class="codeBackgroundWhite">
+                    <br>
+                    <style>#a1 {
+                    width:100%;
+                    height:50px;
+                    background:linear-gradient(to right, cyan, black, yellow);
+                    color:white;
+                    border-radius: 10px;
+                    text-align:center;
+                    }</style>
+                    <div id="a1">渐变色</div>
+                    <br>
+                </div>
+                linear-gradient 可接受很多颜色，也可以接受四个方向（及四个延伸方向）或角度（40deg）。<br>
+            </li>
+            <li>
+                悬停动画
+                <div class="codeBackgroundBlack">
+                    CSS 部分：<br>
+                    <span class="codeCSSID">#a2</span>{<br>
+                    <span class="codeCSSAttribute">transition</span>: <span class="codeCSSResult">1s</span>;<br>
+                    <span class="codeCSSAttribute">background-color</span>: <span class="codeCSSResult">white</span>;<br>
+                    <span class="codeCSSAttribute">color</span>: <span class="codeCSSResult">black</span>;<br>
+                    <span class="codeCSSAttribute">border</span>: <span class="codeCSSResult">0.5px solid darkgray</span>;<br>
+                    }<br>
+                    <span class="codeCSSID">#a2</span><span class="codeCSSEvent">:hover</span>{<br>
+                    <span class="codeCSSAttribute">transition</span>: <span class="codeCSSResult">1s</span>;<br>
+                    <span class="codeCSSAttribute">background-color</span>: <span class="codeCSSResult">blue</span>;<br>
+                    <span class="codeCSSAttribute">color</span>: <span class="codeCSSResult">yellow</span>;<br>
+                    <span class="codeCSSAttribute">border</span>: <span class="codeCSSResult">5px solid black</span>;<br>
+                    }<br>
+                    HTML 部分：<br>
+                    &lt;<span class="codeHTMLElement">div</span> <span class="codeHTMLAttribute">id</span>=<span class="codeHTMLResult">"a2"</span>&gt;悬停动画效果：背景变蓝，字体变黄，边框加粗。&lt;/<span class="codeHTMLElement">div</span>&gt;
+                </div>
+                效果（由于渐变，首位都会空行）：<br>
+                <div class="codeBackgroundWhite">
+                    <br>
+                    <style>#a2{
+                    transition: 1s;
+                    background-color: white;
+                    color: black;
+                    border: 0.5px solid darkgray;
+                    }
+                    #a2:hover{
+                    transition: 1s;
+                    background-color: blue;
+                    color: yellow;
+                    border: 5px solid black;
+                    }</style>
+                    <div id="a2">悬停动画效果：背景变蓝，字体变黄，边框加粗。</div>
+                    <br>
+                </div>
+            </li>
+        </ol>
+    </div>
+    <hr />
+    Copyright &copy; &brvbar; Dowze <span id="version"></span> &brvbar; Microsoft Corporation<br />版权所有。未经许可，禁止转载。
+    <script src="version.js"></script>
+    <script>document.getElementById('version2').innerText = document.getElementById('version').innerText;</script>
+</body>
+</html>
+<script src="cptrv.js"></script>
+<script>var version = document.getElementById("version").innerText;</script>

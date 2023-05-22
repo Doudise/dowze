@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="functions.css" rel="stylesheet" />
+</head>
+<body>
+    <script src="favicon.js"></script>
+    <script src="$.js"></script>
+    <script>
+        function ProcessFile(_e) {
+            var file = document.getElementById('a').files[0];
+            if (file) {
+                var reader = new FileReader();
+                reader.onload = function (event) {
+                    var txt = event.target.result;
+                    document.getElementById('1').innerHTML = txt;
+                };
+            }
+            reader.readAsDataURL(file);
+        }
+    </script>
+    <style>
+        u:hover {
+            cursor: pointer;
+        }
+    </style>
+    <input type="file" id="a" /><button onclick="ProcessFile();">上传</button><br /><br />
+    文本：<u id="1" onclick="CopyURL('1');"></u><br />使用指南：<br />
+    上传文件，待下面的文本栏有文本出现，说明上传成功。<br />
+    单击链接就可以复制啦~<br />
+</body>
+</html>

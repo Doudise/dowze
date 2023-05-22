@@ -1,0 +1,12 @@
+﻿@font-face {
+	font-family: myFont;
+	src:url(Dict.ttf);
+}
+
+* {
+    font-family: 'Comic Sans MS', myFont;
+}
+
+a{color:white;}
+a:hover{color:plum;}
+a:active{color:lightgreen;}

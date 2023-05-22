@@ -1,0 +1,220 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="contextmenu.js"></script>
+    <meta charset="utf-8" />
+    <title>管理员</title>
+    <link href="functions.css" rel="stylesheet" />
+    <style>
+        body {background-image: url(bg.jpg);background-repeat: repeat;}
+        a.z {color: white;top: 10px;bottom: 10px;font-size: 20px;}
+        .header {width: 100%;border: solid #666666 0.7px;}
+        ._1:hover {text-decoration: underline blink;cursor: pointer;}
+        .hidden {display: none;}
+        ul.custom-context-menu{list-style:none;padding:0;margin:0;}
+        li.custom-context-menu-list{color:black;transition:0.5s;background-color:white;}
+        li.custom-context-menu-list:hover{transition:0.5s;color:white;background-color: blue;}
+        ul.custom-context-menu{border-radius:5px;}
+    </style>
+    <script src="favicon.js"></script>
+    <meta name="author" content="朵梓网%三% 开发人员" id="meta_author" />
+    <meta name="description" content="说明：朵梓网%三%是我们朵梓网第三代网站，内部设有重置网站的作用。这一次要感谢 https://www.bilibili.com/ 的赞助，不然我觉得我们还在朵梓网二世呢。" id="meta_description" />
+    <meta name="keywords" content="朵梓网, 朵梓, Dowze, dowze, 朵梓网三, 朵梓网三世, Dowze3, 3, dowze3, Dowze 3, dowze 3, 三, ③, Ⅲ, 朵梓三, 朵梓三世, 三世, do, d③, Do, D③, DO, dO, do3, Do3, dO3, DO3, do 3, Do 3, dO 3, DO 3" id="meta_keywords" />
+</head>
+<body>
+    <div class="header" id="header" style="background-color:#000000;position:fixed;"><div id="_span_div_" style="color: white;">您好，<span id="_span_name_"></span>。想要使用下面的功能吗？点击下方的链接吧！</div></div>
+    <script src="$.js"></script><br id="_signal_span_" /><br />
+    <script src="loading.js"></script>
+    <script src="cptrv.js"></script>
+    <Script src="w.js"></Script>
+    <script>$_AAAvl_PszeEIsOafDq("admin.html", "管理员");</script>
+    <script>if (checkCookie('username')) { document.getElementById('_span_name_').innerText = getCookie('username'); document.getElementById('_signal_span_').style.display = "block"; } else { document.getElementById('_span_div_').style.display = 'none'; document.getElementById('_signal_span_').style.display = 'none'; }</script>
+    <h1 style="font-size: 40px; color: green; text-align: center;">
+        欢迎 <s style="text-decoration: blink;" id="cookiename">
+            <script onerror="return false;">if (checkCookie("username")) { document.getElementById('cookiename').innerText = getCookie("username"); } else { showdialograw({ title: "您尚未输入名字", text: `您叫什么名字？说说来，我们也好称呼。<br /><input type="text" id="textname" placeholder="输入真实姓名。" /><button onclick="add_cookie('username', document.getElementById('textname').value); alert('提交成功，即将刷新'); location.reload();" id="submitnames">提交名称</button>`, button: { text: "内部访问", onclick: "console.log('666')" } }) }</script> 来到管理员模式
+        </s>
+    </h1>
+    <h3 style="font-size:20px;color:yellow;">这里是系统控制台。你可以随便调用网站中的内容。(JavaScript)</h3>
+    <div style="width: 100%; height: 200px; overflow-y: scroll; border: 1px solid black;">
+        <table style="width:99%">
+            <caption>JavaScript 可用指令：</caption>
+            <tr><th style="width: 50px;">Function</th><th style="width: 200px;">Json</th><th class="_2">Description</th></tr>
+            <tr><td style="width: 50px;">outputraw</td><td onclick="CopyURL('_1')" id="_1" class="_1">{clear:boolean,texts:[{content:string,colors:{r:number,g:number,b:number,a:number}}]}</td><td class="_2">输出文字。<br />elementID 为输出 ID；<br />clear 为是否清除输出区；<br />content 为文字；<br />colors 为颜色；<br />r 为红色色素；<br />g 为绿色色素；<br />b 为蓝色色素；<br />a 为透明度。</td></tr>
+            <tr><td style="width: 50px;">alertraw</td><td onclick="CopyURL('_2')" id="_2" class="_1">{texts:{content:string,type:"msg"|"yn"|"input"}}</td><td>弹出对话框。<br />content 为文字；<br />type 为类型。"msg" 表示普通对话框，<br />"yn" 表示选择对话框，"input" 为输入对话框。</td></tr>
+            <tr><td style="width: 50px;">locationchangeraw</td><td onclick="CopyURL('_3')" id="_3" class="_1">{pathorurl:string,settings:{newTab:boolean,return:any}}</td><td>Get to a path or a URL.<br /><b>pathorurl</b> is the path or the url you want to get into.<br /><b>newTab</b> is the judge that you open a new tab to have a view or not.<br /><b>return</b> is the result that returns.</td></tr>
+            <tr><td style="width: 50px;">dataimageshowraw</td><td onclick="CopyURL('_4')" id="_4" class="_1">{fileset:{dataurl:string,height:number,width:number,border:{style:"dashed"|"double"|"solid",width:number,colors:{r:number,g:number,b:number,a:number}}}}</td><td>Shows a picture in the result box.<br /><b>dataurl</b> is the picture URL.<br /><b>height, width</b> is to set the size of the image.<br /><b>border.style</b> is set the style of the border. <b>"dashed"</b> is a dozen of square dots. <b>"double"</b> is two lines.<b> "solid"</b> is a single line.<br /><b>border.width</b> is to set the width of the line of the border.<br /><b>border.colors</b> is to set the color of the border.</td></tr>
+            <tr><td style="width: 50px;">addeventlistenerraw</td><td onclick="CopyURL('_6')" id="_6" class="_1">{id:string,event:keyof HTMLElementEventMap,function:Function}</td><td>This function is to add an event listener to an object or an element.<br /><b>id</b> is the ID of the element.<br /><b>event</b> is the event of the element.<br /><b>function</b> is the event that the event happens of the element.</td></tr>
+            <tr><td style="width: 50px;">reloadurlraw</td><td></td><td>Reload this URL.</td></tr>
+            <tr><td style="width: 50px;">sethtmllanguageraw</td><td onclick="CopyURL('_7')" id="_7" class="_1">{language:"ja"|"en"|"ru"|"zh"}</td><td>Set the URL language.<br /><b>language</b> is the language to set. <b>"ja"</b> is the Japanese. <b>"en"</b> is the English. <b>"ru"</b> is the Russian. <b>zh</b> is the Chinese.</td></tr>
+            <tr><td style="width: 50px;">gethtmllanguageraw</td><td></td><td>Get the result of the URL language.</td></tr>
+            <tr><td style="width: 50px;">settitleraw</td><td onclick="CopyURL('_8')" id="_8" class="_1">{title:string}</td><td>Set the URL title.<br /><b>title</b> is the title that you want to set for the URL.</td></tr>
+            <tr><td style="width: 50px;">gettitleraw</td><td></td><td>Get the URL title.</td></tr>
+            <tr><td style="width: 50px;">unsettitleraw</td><td></td><td>Set the title as norm.</td></tr>
+            <tr><td style="width: 50px;">blankhtmlraw</td><td></td><td>Set the URL blank.</td></tr>
+            <tr><td style="width: 50px;">uploadfile2dataraw</td><td></td><td>Upload the file with the initialization in the output box.</td></tr>
+            <tr><td style="width: 50px;">clearoutputarearaw</td><td></td><td>Clear the output box.</td></tr>
+            <tr><td style="width: 50px;">titleraw</td><td onclick="CopyURL('_9');" id="_9" class="_1">{elementID:"output",rawtext:{text:string,color:{r:number,g:number,b:number,a:number},fontSize: number,fontFamily:"DengXian"|"Comic Sans MS"|"Microsoft YaHei"|"inherit"|"汉仪字典体简"|"Arial"|"Arial Black"|"Yu Gothic",onclick?:Function}}</td><td>让输出的文字更加具体。<br /><b>fontSize</b> is to set the size of the text.<br /><b>fontFamily</b> is to set the font of the text.</td></tr>
+            <tr><td style="width: 50px;">setwindowframeraw</td><td class="_1" onclick="CopyURL('_15');" id="_15">{url:string}</td><td>Put a <B>URL &lt;iframe&gt;</B> in the output box.<br><b>url</b>: the website to show in the box.</td></tr>
+            <tr><td style="width: 50px;">geticonraw</td><td></td><td>Get the Icon of the website.</td></tr>
+            <tr><td style="width: 50px;">colorchooserraw</td><td></td><Td>Let the color frame show.</Td></tr>
+            <tr><td style="width:50px;">calculatorraw</td><Td></Td><TD>计算器设置</TD></tr>
+            <TR><tD STYLE="WIDTH: 50PX;">getrequestraw</tD><TD ONCLICK="CopyURL('_16');" ID="_16" CLASS="_1">{param:string}</TD><TD>Get the URL request parameter result from <span style="color: brown;">location</span>.<span style="color:blue;">search</span>.<Br><b>param</b> is the parameter that you'd like to get.</TD></TR>
+            <tr><td style='width:50px;'>appendanewlineintheparagraphraw</td><td></td><td>添加空行</td></tr>
+            <tr><td style='width:50px;'>appendanewparagraphraw</td><td></td><td>添加文章分隔符</td></tr>
+            <tr><Td style="width:50px;">copytextraw</Td><td onclick="CopyURL('_17');" ID="_17" class="_1">{text:string}</td><td>复制文字</td></tr>
+            <tr><td>appendchildraw</td><td onclick="CopyURL('_18');" id="_18" class="_1">{tagset:[{childtag:keyof HTMLElementTagNameMap,properties:[{name:string,value:any}]}]}</td><td>Append a new HTML tag into output area.<br /><b>childtag</b> is the tag name that you'd like to append.<br /><b>properties</b> is the properties that you'd like to set. <b>name</b> is the name of the property. <b>value</b> is the result of the property.</td></tr>
+            <tr><td>removechildraw</td><td onclick="CopyURL('_19');" id="_19" class="_1">{tagname:keyof HTMLElementTagNameMap}</td><td>Remove an HTML tag from the output area.<br /><b>tagname</b> is the tag that you'd like to remove.</td></tr>
+            <tr><td>placefinderraw</td><td></td><td>车牌查询器。</td></tr>
+            <tr><td>StringCFG.concatraw</td><td onclick="CopyURL('_20');" id="_20" class="_1">{before:string,concat:string}</td><td>在文本后面加上文本。这个指令要用 outputraw 输出。<br /><b>before </b>是操作前的文本，<br /><b>concat</b> 是要加的文本。</td></tr>
+            <tr><td>StringCFG.replaceraw</td><td onclick="CopyURL('_21');" id="_21" class="_1">{before:string,repltxt:string,after:string}</td><td>Shows the replacement that first showed in the string.<br /><b>before</b> is the whole text before the replacement.<br /><b>repltxt</b> is the text that will be replaced.<br /><b>after</b> is the text that will replace the <b>repltxt</b>.</td></tr>
+            <tr><td>StringCFG.replaceallraw</td><td onclick="CopyURL('_21');" class="_1">{before:string,repltxt:string,after:string}</td><td>Replace all the text that has given.<br /><b>before</b> is the whole text before the replacement.<br /><b>repltxt</b> is the text that will be replaced.<br /><b>after</b> is the text that will replace the <b>repltxt</b>.</td></tr>
+            <tr><td>StringCFG.deleteraw</td><td onclick="CopyURL('_22');" class="_1" id="_22">{before:string,dlttxt:string}</td><td>Delete a piece of text (can not delete all of them) in a string.<br /><b>before</b> is the whole text before the deletement.<br /><b>dlttxt</b> is the text to delete.</td></tr>
+            <tr><td>StringCFG.$</td><td onclick="CopyURL('_22.5');" class="_1" id="_22.5">[string1, string2...]</td><td>快速清屏写文字。</td></tr>
+            <tr><td>StringCFG._</td><td onclick="CopyURL('_22.5');" class="_1">[string1, string2...]</td><td>快速不清屏写文字。</td></tr>
+            <tr><td>NumberCFG.plusraw</td><td onclick="CopyURL('_23');" class="_1" id="_23">{x:number,y:number}</td><td>进行加法运算。<br /><b>x</b>、<b>y</b> 为两个数字</td></tr>
+            <tr><td>NumberCFG.minusraw</td><td onclick="CopyURL('_23');" class="_1">{x:number,y:number}</td><td>进行减法运算。<br /><b>x</b>、<b>y</b> 为两个数字</td></tr>
+            <tr><td>NumberCFG.timeraw</td><td onclick="CopyURL('_23');" class="_1">{x:number,y:number}</td><td>进行乘法运算。<br /><b>x</b>、<b>y</b> 为两个数字</td></tr>
+            <tr><td>NumberCFG.divideraw</td><td onclick="CopyURL('_23');" class="_1">{x:number,y:number}</td><td>进行除法运算。<br /><b>x</b>、<b>y</b> 为两个数字</td></tr>
+            <tr><td>NumberCFG.powraw</td><td onclick="CopyURL('_23');" class="_1">{x:number,y:number}</td><td>进行乘方运算。<br /><b>x</b>、<b>y</b> 为两个数字</td></tr>
+            <tr><td>NumberCFG.absraw</td><td onclick="CopyURL('_24');" class="_1" id="_24">{x:number}</td><td>绝对值运算。</td></tr>
+            <tr><td>NumberCFG.timepiraw</td><td onclick="CopyURL('_24');" class="_1">{x:number}</td><td>&pi; 倍数运算。</td></tr>
+            <tr><td>NumberCFG.timeeraw</td><td onclick="CopyURL('_24');" class="_1">{x:number}</td><td>e 倍数运算。</td></tr>
+            <tr><td>NumberCFG.randomraw</td><td onclick="CopyURL('_24');" class="_1">{x:number}</td><td>在 0 到 <b>x</b> 之间取随机数。</td></tr>
+            <tr><td>NumberCFG.floorraw</td><td onclick="CopyURL('_24');" class="_1">{x:number}</td><td>去尾运算。</td></tr>
+            <tr><td>NumberCFG.topraw</td><td onclick="CopyURL('_24');" class="_1">{x:number}</td><td>进一运算。</td></tr>
+            <tr><td>NumberCFG.piraw</td><td></td><td>取 &pi; 值。</td></tr>
+            <tr><td>NumberCFG.eraw</td><td></td><td>取 e 值。</td></tr>
+            <tr><td>cls</td><td></td><td>在开发人员工具中，表示清除控制台。</td></tr>
+            <tr><td>add_cookie</td><td>cookiename, cookieresult</td><td>添加 Cookie。</td></tr>
+            <tr><td>GetRequest</td><td></td><td>Returns an Object list from location.search.</td></tr>
+            <tr><td>getCookie</td><td>c_name</td><td>取 Cookie 值</td></tr>
+            <tr><td>checkCookie</td><td>c_name</td><td>检测 Cookie 是否存在</td></tr>
+            <tr><td>$_AAAvl_PszeEIsOafDq</td><td>aEstI2fUs_e3yU4$stU3_Js5, us$s_$sftJ2G8K2cd$_Js5</td><td>加入一个网站分支</td></tr>
+            <tr><td>CopyURL</td><td>e</td><td>根据 ID 复制文字。</td></tr>
+            <tr><td>getfolderfiles</td><td></td><td>将网站的根目录显示出来</td></tr>
+            <tr><td>showdialograw</td><td onclick="CopyURL('_25');" class="_1" id="_25">{title:string,text:string,button:{text:string,onclick:Function}}</td><td>展示 Rich Toast 对话框。</td></tr>
+            <tr><td>downloadfontraw</td><td></td><td>下载本网页字体——汉仪字典宋简。</td></tr>
+            <tr><td>blobvideoraw</td><td onclick="CopyURL('_26');" class="_1" id="_26">{id:string,url:string}</td><td>设置 BLOB 视频（已知）</td></tr>
+        </table>
+    </div>
+    <style>
+        td, th, tr, table, caption {
+            border: 1px solid #060606;
+        }
+    </style>
+    <textarea style="max-height:200px;max-width:100%;min-height:200px;min-width:100%;overflow-y:scroll;height:200px;width:100%;background-image:url(bg.jpg);" id="jscodearea" onkeypress="var ev = window.event; if (ev.keyCode == 13) { document.getElementById('execjs').click(); } "></textarea><button onclick="eval(document.getElementById('jscodearea').value); document.getElementById('jscodearea').value = '';" id="execjs">运行</button>
+    <div id="output" class="header" style="overflow-y: scroll; height: 500px; background-image: url(bg.jpg);"></div>
+    <div id="abouturl">
+        <strong style="font-size:28px;">网站扩展功能</strong><br />
+        <em style="font-size:20px;">代码查看器：<br /></em>
+        <div>
+            <input type="file" name="1145141919810" value="" id="fileupload1" />
+            <button onclick="Import()">读取</button>
+            <script>
+                function Import() {
+                    var selectedFile = document.getElementById("fileupload1").files[0];
+                    if (!selectedFile) { document.getElementById("result").innerText = ""; return; }
+                    var reader = new FileReader();
+                    reader.readAsText(selectedFile);
+                    reader.onload = function () {
+                        document.getElementById("result").innerText = this.result.toString();
+                    };
+                }
+            </script><br />
+            读取内容：（中文可能会引起乱码）<button onclick="CopyURL('result');">复制</button><br />
+            <div style="width:100%;height:100px;overflow-y:scroll;word-break:break-all;border:1px solid black;" id="result"></div>
+        </div><br />
+        <em style="font-size:20px;">文件在线编辑下载器：<br /></em>
+        <div style="border:1px solid black;word-break:break-all;">
+            <div contenteditable="true" id="codeinst" style="width:99%;height:100px;overflow-y:scroll;word-break:break-all;border:1px solid black;"></div>
+            <input type="text" id="filename" placeholder="请在此处输入文件名。" />
+            <button onclick="downloadTxt(document.getElementById('filename').value, document.getElementById('codeinst').innerText)">下载</button><button onclick="document.getElementById('filename').value = ''; document.getElementById('codeinst').innerText = '';">清空</button>
+            <script>
+                /**@param {string} fileName @param {string} content*/function downloadTxt(fileName, content) {
+                    let blob = new Blob([content], {
+                        type: "text/plain;charset=utf-8"
+                    });
+                    let reader = new FileReader();
+                    reader.readAsDataURL(blob);
+                    reader.onload = function (e) {
+                        let a = document.createElement('a');
+                        a.download = fileName;
+                        a.href = e.target.result;
+                        document.body.appendChild(a);
+                        a.click();
+                        document.body.removeChild(a);
+                    }
+                }
+            </script>
+        </div><br />
+        <em style="font-size:20px;">base64 字符生成器</em><br />
+        <div style="border:1px solid black;word-break:break-all;">
+            <div>
+                <h1 style="font-size:32px;">编码</h1>
+                输入字符，任何语言都可以。<br />
+                <div contenteditable="true" id="base64input" style="width:99%;height:100px;overflow-y:scroll;word-break:break-all;border:1px solid black;"></div><br />
+                <button onclick="document.getElementById('base64input').innerText=btoa(encodeURIComponent(document.getElementById('base64input').innerText));">编码</button>
+                <button onclick="CopyURL('base64input');">复制结果</button>
+            </div>
+            <div>
+                <h1 style="font-size:32px;">解码</h1>
+                输入要解码的文字（可能会解码失败）<br />
+                <div contenteditable="true" id="base64output" style="width:99%;height:100px;overflow-y:scroll;word-break:break-all;border:1px solid black;"></div><br />
+                <button onclick="document.getElementById('base64output').innerText=decodeURIComponent(atob(document.getElementById('base64output').innerText));">解码</button>
+                <button onclick="CopyURL('base64output');">复制结果</button>
+            </div><hr />
+            <button onclick="document.getElementById('base64input').innerText = ''; document.getElementById('base64output').innerText = '';">清空</button>
+        </div>
+        <br />
+        <em style="font-size:20px;">设置 Cookie：</em><br />
+        <div style="border:1px solid black;word-break:break-all;"><ul>
+            <li>Cookie 名称（只允许使用英文、数字或下划线）：<input type="text" required name="cookiename" id="cookiename" placeholder="Cookie 名称"></li>
+            <li>Cookie 内容（只允许使用英文、数字或下划线）：<input type="text" required name="cookievalue" id="cookievalue" placeholder="Cookie 内容"></li>
+            <li><input type="submit" onclick="add_cookie(document.getElementById('cookiename').value, document.getElementById('cookievalue').value);" value="创建"></li>
+        </ul>
+        Cookie 及隐私设置：edge://settings/siteData 进入</div><br />
+        <em style="font-size:20px;">Data 文件上传：</em><br />
+        <iframe src="upload.html" style="width: 100%; height: 180px; border: 1px solid black;"></iframe><br />
+        <em style="font-size:20px;">元宵节海报展示与下载</em><br />
+        <div style="border:1px solid black;word-break:break-all;">
+            <img src="ltnfstvl.jpg" style="width: 100%" alt="元宵节" />
+            <a href="ltnfstvl.jpg" download="ltnfstvl.jpg">下载图片</a><br />
+            <a href="javascript:alert('内部含有非本机字体，暂不支持下载！');">下载电子海报</a>
+        </div>
+        <em style="font-size:20px;">进制转换器</em><br />
+        <div style="border:1px solid black;word-break:break-all;">
+            <b>注明：</b>只支持二进制、十进制和十六进制与其他进制进行转换。<br />
+            选择要转换进制：<select id="radioChanger"></select>
+            <script>
+                for ( var i=0;i<35;i++){
+                    var rc=document.getElementById('radioChanger');
+                    var op=document.createElement("option");
+                    op.value=(i+2).toString();
+                    op.innerText=(i+2).toString();
+                    rc.appendChild(op);
+                }
+            </script><br />
+            输入数字：<input type="text" id="radioNumber" value="0" /><br />
+            <input type="radio" id="radioNumberTwo" name="radioNumber" />二进制
+            <input type="radio" name="radioNumber" id="radioNumberTen" checked />十进制
+            <input type="radio" name="radioNumber" id="radioNumberSixteen" />十六进制
+            <script>
+                function radioChangeNumber() {
+                    document.getElementById('radioNumberOutput').innerText="";
+                    var radioNumber=document.getElementById("radioNumber").value;
+                    if(document.getElementById('radioNumberTwo').checked){radioNumber="0b"+radioNumber;}
+                    if(document.getElementById('radioNumberSixteen').checked){radioNumber="0x"+radioNumber;}
+                    document.getElementById('radioNumberOutput').innerText = eval(radioNumber).toString(document.getElementById('radioChanger').value);
+                }
+            </script><br />
+            输出：<div id="radioNumberOutput" style="border:black solid 1px;"></div><button onclick="document.getElementById('radioNumberOutput').disabled=false; CopyURL('radioNumberOutput'); document.getElementById('radioNumberOutput').disabled=true;">复制</button>
+            <button type="button" onclick="radioChangeNumber();">转换</button>
+            <button type="button" onclick="document.getElementById('radioNumberOutput').innerText='';">清空输出</button>
+        </div>
+    </div>
+    <script>sethtmllanguageraw({ language: "zh" });</script>
+    <hr />
+    Copyright &copy; &brvbar; Dowze <span id="version"></span> &brvbar; Microsoft Corporation<br />版权所有。未经许可，禁止转载。
+    <script src="version.js"></script>
+</body>
+</html>

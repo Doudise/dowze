@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="contextmenu.js"></script>
+    <meta charset="utf-8" />
+    <title>功能中心</title>
+    <link href="functions.css" rel="stylesheet" />
+    <style>
+        body {background-image: url(bg.jpg);background-repeat: repeat;}
+        a.z {color: white;top: 10px;bottom: 10px;font-size: 20px;}
+        .header {width: 100%;border: solid #666666 0.7px;}
+        ._1:hover {text-decoration: underline blink;cursor: pointer;}
+        .hidden {display: none;}
+        ul.custom-context-menu{list-style:none;padding:0;margin:0;}
+        li.custom-context-menu-list{color:black;transition:0.5s;background-color:white;}
+        li.custom-context-menu-list:hover{transition:0.5s;color:white;background-color: blue;}
+        ul.custom-context-menu{border-radius:5px;}
+    </style>
+    <script src="favicon.js"></script>
+    <meta name="author" content="朵梓网%三% 开发人员" id="meta_author" />
+    <meta name="description" content="说明：朵梓网%三%是我们朵梓网第三代网站，内部设有重置网站的作用。这一次要感谢 https://www.bilibili.com/ 的赞助，不然我觉得我们还在朵梓网二世呢。" id="meta_description" />
+    <meta name="keywords" content="朵梓网, 朵梓, Dowze, dowze, 朵梓网三, 朵梓网三世, Dowze3, 3, dowze3, Dowze 3, dowze 3, 三, ③, Ⅲ, 朵梓三, 朵梓三世, 三世, do, d③, Do, D③, DO, dO, do3, Do3, dO3, DO3, do 3, Do 3, dO 3, DO 3" id="meta_keywords" />
+</head>
+<body>
+    <div class="header" id="header" style="background-color:#000000;position:fixed;"><div id="_span_div_" style="color: white;">您好，<span id="_span_name_"></span>。想要使用下面的功能吗？点击下方的链接吧！</div></div>
+    <script src="$.js"></script><br id="_signal_span_" /><br />
+    <script src="loading.js"></script>
+    <script src="cptrv.js"></script><br />
+    <Script src="w.js"></Script>
+    <script>if (checkCookie('username')) { document.getElementById('_span_name_').innerText = getCookie('username'); document.getElementById('_signal_span_').style.display = "block"; } else { document.getElementById('_span_div_').style.display = 'none'; document.getElementById('_signal_span_').style.display = 'none'; }</script>
+    <h1 style="text-align:center;font-size:40px;">功能区域</h1>
+    <span style="color:yellow;">请允许本界面使用 Cookie。</span><br />
+    部分功能可能需要进入管理员解锁。
+    <script src="$.js"></script>
+    <ul>
+        <li>
+            <em style="font-size:20px;">URI 编码和解码</em>
+            <div style="border:1px solid black;word-break:break-all;">
+                <div>
+                <h1 style="font-size:32px;">编码</h1>
+                输入字符，任何语言都可以。<br />
+                <div contenteditable="true" id="base64input" style="width:99%;height:100px;overflow-y:scroll;word-break:break-all;border:1px solid black;"></div><br />
+                <button onclick="document.getElementById('base64input').innerText=encodeURIComponent(document.getElementById('base64input').innerText);">编码</button>
+                <button onclick="CopyURL('base64input');">复制结果</button>
+            </div>
+            <div>
+                <h1 style="font-size:32px;">解码</h1>
+                输入或粘贴要解码的字符。<br />
+                <div contenteditable="true" id="base64output" style="width:99%;height:100px;overflow-y:scroll;word-break:break-all;border:1px solid black;"></div><br />
+                <button onclick="document.getElementById('base64output').innerText=decodeURIComponent(document.getElementById('base64output').innerText);">解码</button>
+                <button onclick="CopyURL('base64output');">复制结果</button>
+            </div><hr />
+            <button onclick="document.getElementById('base64input').innerText = ''; document.getElementById('base64output').innerText = '';">清空</button>
+            </div>
+        </li>
+        <li>
+            随机取数器：<br />
+            最小：<input type="number" id="randomMinimumNumber" value="0">最大：<input type="number" id="randomMaximumNumber" value="10">&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;<button onclick="getRandomNumber();">生成</button><br>
+            输出：<div style="border:solid 1px black;word-wrap:break-word;" id="randomNumberOutput"></div>用<select id="randomNumberWhat2"><option>, </option><option>; </option><option>、</option></select>隔开。<br />
+            运行<input type="number" id="randomNumberExecutivities" onkeydown="if(eval(this.value)>1000){this.value=1000;}if(eval(this.value)<0){this.value=0;}" onkeypress="if(eval(this.value)>1000){this.value=1000;}if(eval(this.value)<0){this.value=0;}" onkeyup="if(eval(this.value)>1000){this.value=1000;}if(eval(this.value)<0){this.value=0;}" value="0">次
+            <script>
+            function getRandomNumber(){
+                document.getElementById('randomNumberOutput').innerText="";
+                var randomNumberWhat=document.getElementById('randomNumberWhat2').value;
+                for(var i=0;i<eval(document.getElementById('randomNumberExecutivities').value);i++) {
+                    document.getElementById('randomNumberOutput').innerText+=(Math.floor(Math.random()*(eval(document.getElementById('randomMaximumNumber').value)-eval(document.getElementById('randomMinimumNumber').value)))+eval(document.getElementById('randomMinimumNumber').value)).toString()+randomNumberWhat;
+                }
+                document.getElementById('randomNumberOutput').innerText+="(end)";
+                document.getElementById('randomNumberOutput').innerText=document.getElementById('randomNumberOutput').innerText.replaceAll(",(end)", "");
+                document.getElementById('randomNumberOutput').innerText=document.getElementById('randomNumberOutput').innerText.replaceAll(";(end)", "");
+                document.getElementById('randomNumberOutput').innerText=document.getElementById('randomNumberOutput').innerText.replaceAll("、(end)", "");
+                document.getElementById('randomNumberOutput').innerText=document.getElementById('randomNumberOutput').innerText.replaceAll("(end)", "");
+            }
+            </script>
+        </li>
+    </ul>
+    <hr />
+    Copyright &copy; &brvbar; Dowze <span id="version"></span> &brvbar; Microsoft Corporation<br />版权所有。未经许可，禁止转载。
+    <script src="version.js"></script>
+</body>
+</html>
